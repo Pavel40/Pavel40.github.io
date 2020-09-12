@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #26136e;
+    background-image: url("img/bg.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#page_header {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#page_header div {
+    text-align: center;
+    width: 70%;
+    border: solid 1px purple;
+    border-radius: 5px;
+    background-color: rgba(128, 0, 128, 0.6);
+}
+
+.section-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.section-link:hover {
+    color: black;
+    background-color: white;
+}
+
+section {
+    margin: 10px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: solid 1px purple;
+    border-radius: 5px;
+    background-color: rgba(128, 0, 128, 0.6);
+}
+
+.group {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#page_footer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#page_footer div {
+    border: solid 1px purple;
+    background-color: rgba(128, 0, 128, 0.6);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: gray;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1rem;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+#topButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100px;
+}
