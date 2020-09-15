@@ -11,32 +11,34 @@
     <script src="script.js" defer></script>
 </head>
 
-<body>
+<body role="document">
 
-    <header id="page_header">
+    <header id="page_header" role="heading">
         <div>
             <h1>Pavel40</h1>
             <img src="img/avatar.png" alt="avatar">
-            <a href="#web_designer_section" class="section-link">
-                <span><img class="icon" src="img/icons/web.png" alt="web designer icon"></span>
-                <span>Web Designer</span>
-            </a>
-            <a href="#programmer_section" class="section-link">
-                <span><img class="icon" src="img/icons/programmer.png" alt="web designer icon"></span>
-                <span>Programmer</span>
-            </a>
-            <a href="#game_developer_section" class="section-link">
-                <span><img class="icon" src="img/icons/game.png" alt="game icon"></span>
-                <span>Game Developer</span>
-            </a>
+            <nav role="navigation">
+                <a href="#web_designer_section" class="section-link">
+                    <span><img class="icon" src="img/icons/web.png" alt="web designer icon"></span>
+                    <span>Web Developer</span>
+                </a>
+                <a href="#programmer_section" class="section-link">
+                    <span><img class="icon" src="img/icons/programmer.png" alt="web designer icon"></span>
+                    <span>Programmer</span>
+                </a>
+                <a href="#game_developer_section" class="section-link">
+                    <span><img class="icon" src="img/icons/game.png" alt="game icon"></span>
+                    <span>Game Developer</span>
+                </a>
+            </nav>
         </div>
     </header>
 
-    <section id="web_designer_section">
+    <section id="web_designer_section" role="main">
         <div class="section-content">
             <h2>
                 <span><img class="icon" src="img/icons/web.png" alt="web designer icon"></span>
-                <span>Web Designer</span>
+                <span>Web Developer</span>
             </h2>
             <p>I can create beutiful, modern websites. My websites are mobile-friendly, fully responsive, and created
                 using lates versions of HTML, CSS, and JavaScript. I create mostly static sites (no eshops, sites with
@@ -50,21 +52,21 @@
             <div class="group">
                 <div>
                     <h4>HTML 5</h4>
-                        <img src="img/web_technologies/html5.png" alt="HTML 5 logo" class="logo">
+                    <img src="img/web_technologies/html5.png" alt="HTML 5 logo" class="logo">
                 </div>
                 <div>
                     <h4>CSS 3</h4>
-                        <img src="img/web_technologies/css3.png" alt="CSS 3 logo" class="logo">
+                    <img src="img/web_technologies/css3.png" alt="CSS 3 logo" class="logo">
                 </div>
                 <div>
                     <h4>JavaScript ES6</h4>
-                        <img src="img/web_technologies/js.png" alt="JS logo" class="logo">
+                    <img src="img/web_technologies/js.png" alt="JS logo" class="logo">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="programmer_section">
+    <section id="programmer_section" role="main">
         <div class="section-content">
             <h2>
                 <span><img class="icon" src="img/icons/programmer.png" alt="web designer icon"></span>
@@ -87,7 +89,7 @@
 
     </section>
 
-    <section id="game_developer_section">
+    <section id="game_developer_section" role="main">
         <div class="section-content">
             <h2>
                 <span><img class="icon" src="img/icons/game.png" alt="game developer icon"></span>
@@ -95,13 +97,13 @@
             </h2>
             <p>I'm also learning game developement. I use <a href="https://godotengine.org">Godot</a> engine, it's free,
                 and open-source. So far, I created three games (they're not much good, I'm still learning).</p>
-                <iframe src="https://itch.io/embed/731149" width="552" height="167"></iframe>
-                <iframe src="https://itch.io/embed/705690" width="552" height="167"></iframe>
-                <iframe src="https://itch.io/embed/703269" width="552" height="167"></iframe>
+            <iframe src="https://itch.io/embed/731149" width="552" height="167"></iframe>
+            <iframe src="https://itch.io/embed/705690" width="552" height="167"></iframe>
+            <iframe src="https://itch.io/embed/703269" width="552" height="167"></iframe>
         </div>
     </section>
 
-    <footer id="page_footer">
+    <footer id="page_footer" role="contentinfo">
         <div>
             <h2>Contact me:</h2>
             <p>Email: <a href="mailto:pav40@protonmail.com">pav40@protonmail.com</a></p>
