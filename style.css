@@ -15,8 +15,9 @@ body {
 }
 
 #page_header {
+    margin: 10px;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -68,6 +69,36 @@ section {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 20px;
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.submit {
+    width: auto;
+}
+
+.submit:hover {
+    background-color: rgba(128, 0, 128, 0.4);
 }
 
 #page_footer {

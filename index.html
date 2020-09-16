@@ -13,7 +13,7 @@
 
 <body role="document">
 
-    <header id="page_header" role="heading">
+    <header id="page_header" role="banner">
         <div>
             <h1>Pavel40</h1>
             <img src="img/avatar.png" alt="avatar">
@@ -30,6 +30,7 @@
                     <span><img class="icon" src="img/icons/game.png" alt="game icon"></span>
                     <span>Game Developer</span>
                 </a>
+                <a href="#contact_me_section" class="section-link">Contact me</a>
             </nav>
         </div>
     </header>
@@ -103,9 +104,23 @@
         </div>
     </section>
 
+    <section id="contact_me_section" role="main">
+        <div class="section-content">
+            <h2>Contact me:</h2>
+            <form role="form" method="POST" action="https://formspree.io/maylwdgb">
+                <label for="name">Your name:</label>
+                <input type="text" name="Name" id="name" required>
+                <label for="email">Your email:</label>
+                <input type="email" name="Email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea name="Message" id="message" rows=8></textarea>
+                <input type="submit" value="Send" class="submit">
+            </form>
+        </div>
+    </section>
+
     <footer id="page_footer" role="contentinfo">
         <div>
-            <h2>Contact me:</h2>
             <p>Email: <a href="mailto:pav40@protonmail.com">pav40@protonmail.com</a></p>
             <p>Copyright &copy; 2020 Pavel40</p>
             <p>Background image: <a href="https://www.vecteezy.com/free-vector/universe">Universe Vectors by
