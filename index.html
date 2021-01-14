@@ -6,140 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavel40</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3b7d94be21.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Personal website of programmer, web designer, and game developer Pavel40.">
+    <meta name="author" content="Pavel40">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body role="document">
+<body>
+    <nav id="navigation">
+        <a href="#about-me-section" class="nav-link"><span><i class="fas fa-info-circle"></i></span><span
+                class="link-text">About me</span></a>
+        <a href="#programming-section" class="nav-link"><span><i class="fab fa-python"></i></span><span
+                class="link-text">Programming</span></a>
+        <a href="#web-design-section" class="nav-link"><span><i class="fas fa-globe"></i></span><span
+                class="link-text">Web design</span></a>
+        <a href="#game-developement-section" class="nav-link"><span><i class="fas fa-gamepad"></i></span><span
+                class="link-text">Game developement</span></a>
+        <a href="#contact-me-section" class="nav-link"><span><i class="fas fa-envelope"></i></span><span
+                class="link-text">Contact me</span></a>
+        <button id="change-theme-button"><span id="theme-icon"><i class="fas fa-moon"></i></span><span
+                class="link-text">Change theme</span></button>
+    </nav>
 
-    <header id="page_header" role="banner">
-        <div>
-            <a href="https://github.com/Pavel40" id="github">My GitHub</a>
+    <main id="main-content">
+        <header id="page-header">
             <h1>Pavel40</h1>
             <img src="img/avatar.png" alt="avatar" id="avatar">
-            <nav role="navigation">
-                <a href="#web_designer_section" class="section-link">
-                    <span><img class="icon" src="img/icons/web.png" alt="web designer icon"></span>
-                    <span>Web Developer</span>
-                </a>
-                <a href="#programmer_section" class="section-link">
-                    <span><img class="icon" src="img/icons/programmer.png" alt="web designer icon"></span>
-                    <span>Programmer</span>
-                </a>
-                <a href="#game_developer_section" class="section-link">
-                    <span><img class="icon" src="img/icons/game.png" alt="game icon"></span>
-                    <span>Game Developer</span>
-                </a>
-                <a href="#contact_me_section" class="section-link">Contact me</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="web_designer_section" role="main">
-        <div class="section-content">
-            <h2>
-                <span><img class="icon" src="img/icons/web.png" alt="web designer icon"></span>
-                <span>Web Developer</span>
-            </h2>
-            <p>I can create beutiful, modern websites. My websites are mobile-friendly, fully responsive, and created
-                using lates versions of HTML, CSS, and JavaScript. I create mostly static sites (no eshops, sites with
-                forms that send data to servers, etc.). I can also implement dark-mode, when required (this page does
-                not need dark-mode).</p>
-            <h3>What do I use:</h3>
-            <p>I use HTML 5, CSS 3, and JavaScript ES6. To make the process of creating website easier for me, I also
-                sometimes use <a href="https://www.getbootstrap.com">Twitter Bootstrap 4</a>, or <a
-                    href="https://bulma.io">Bulma</a> framework. In order to create this page, I didn't use any
-                framework, just pure HTML 5, CSS 3, and vanilla JS.</p>
-            <div class="group">
-                <div>
-                    <h4>HTML 5</h4>
-                    <img src="img/web_technologies/html5.png" alt="HTML 5 logo" class="logo">
-                </div>
-                <div>
-                    <h4>CSS 3</h4>
-                    <img src="img/web_technologies/css3.png" alt="CSS 3 logo" class="logo">
-                </div>
-                <div>
-                    <h4>JavaScript ES6</h4>
-                    <img src="img/web_technologies/js.png" alt="JS logo" class="logo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="programmer_section" role="main">
-        <div class="section-content">
-            <h2>
-                <span><img class="icon" src="img/icons/programmer.png" alt="web designer icon"></span>
-                <span>Programmer</span>
-            </h2>
-            <p>My favorite programming language is Python 3! I have some basic knowledge of Flask, which I can use as
-                backend of web apps. I also can create scripts for websites in vanilla JavaScript ES6. I
-                have some basic knowledge of C (and a bit C++, I'm interested in Arduino and Internet of Things).</p>
-            <div class="group">
-                <div>
-                    <h4>Python 3</h4>
-                    <img src="img/web_technologies/python.png" alt="Python logo" class="logo">
-                </div>
-                <div>
-                    <h4>JavaScript ES6</h4>
-                    <img src="img/web_technologies/js.png" alt="JS logo" class="logo">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="game_developer_section" role="main">
-        <div class="section-content">
-            <h2>
-                <span><img class="icon" src="img/icons/game.png" alt="game developer icon"></span>
-                <span>Game Developer</span>
-            </h2>
-            <p>I'm also learning game developement. I use <a href="https://godotengine.org">Godot</a> engine, it's free,
-                and open-source. So far, I created three games (they're not much good, I'm still learning).</p>
-            <iframe src="https://itch.io/embed/731149" width="552" height="167"></iframe>
-            <iframe src="https://itch.io/embed/705690" width="552" height="167"></iframe>
-            <iframe src="https://itch.io/embed/703269" width="552" height="167"></iframe>
-        </div>
-    </section>
-
-    <section id="contact_me_section" role="main">
-        <div class="section-content">
-            <h2>Contact me:</h2>
-            <form role="form" method="POST" action="https://formspree.io/maylwdgb">
-                <label for="name">Your name:</label>
-                <input type="text" name="Name" id="name" required>
-                <label for="email">Your email:</label>
-                <input type="email" name="Email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea name="Message" id="message" rows=8></textarea>
-                <input type="submit" value="Send" class="submit">
-            </form>
-        </div>
-    </section>
-
-    <footer id="page_footer" role="contentinfo">
-        <div>
-            <p>Email: <a href="mailto:pav40@protonmail.com">pav40@protonmail.com</a></p>
-            <p>Copyright &copy; 2020 Pavel40</p>
-            <p>Background image: <a href="https://www.vecteezy.com/free-vector/universe">Universe Vectors by
-                    Vecteezy</a><br>Code icon
-                made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a>
-                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.<br>
-                Web icon made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev"
-                    title="Vitaly Gorbachev">Vitaly
-                    Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.<br>
-                Game icon made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev"
-                    title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/"
-                    title="Flaticon">www.flaticon.com</a>.
+            <p id="description"><em>Web designer, programmer, game developer</em><br><br>
+                <a href="https://github.com/Pavel40" class="media-link"><i class="fab fa-github"></i></a><a
+                    href="https://pavel40.itch.io/" class="media-link"><i class="fab fa-itch-io"></i></a>
             </p>
-        </div>
-    </footer>
+        </header>
 
-    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+        <section id="about-me-section">
+            <div>
+                <h2>About me</h2>
+                <hr>
+                <p class="text">I am a programmer, web designer, and game developer. Or at least I'm doing my best to
+                    be one. I like to explore new things, practice coding and play computer games. If you want to see my
+                    projects, you can have a look on my <a href="https://github.com/Pavel40">Github</a>, and if you want to play
+                    some of my games, you can download them form <a href="https://pavel40.itch.io/">Itch.io</a>. If, for whatever
+                    reason, you want to know what is my favourite computer game and what is my favourite book, I can
+                    tell
+                    you, I really like The Witcher books and The Witcher games.</p>
+            </div>
+        </section>
 
+        <section id="programming-section">
+            <div>
+                <h2>Programming</h2>
+                <hr>
+                <p class="text">My favourite programming language is Python3. I have some basic knowledge of the Flask
+                    microframework, which I can use as backend of web applications. Another option for backend of web
+                    apps is PHP, of which I know some basics too (but I don't like PHP). I can also create scripts for
+                    my
+                    websites in vanilla JavaScript ES6. I also know a tiny bit of C (and a bit of C++, I'm interested in
+                    Arduino, and Internet of Things).</p>
+                <div class="group">
+                    <div>
+                        <h3>Python 3</h3>
+                        <i class="fab fa-python technology"></i>
+                    </div>
+                    <div>
+                        <h3>JavaScript ES6</h3>
+                        <i class="fab fa-js technology"></i>
+                    </div>
+                    <div>
+                        <h3>PHP</h3>
+                        <i class="fab fa-php technology"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="web-design-section">
+            <div>
+                <h2>Web design</h2>
+                <hr>
+                <p class="text">I can create great looking websites using modern technologies - HTML 5, CSS 3, and
+                    JavaScript ES6. I can also use Bootstrap and Bulma framework to build websites really fast. I make
+                    responsive websites (good looking on every screen) and I can also enable dark mode.</p>
+                <div class="group">
+                    <div>
+                        <h3>HTML 5</h3>
+                        <i class="fab fa-html5 technology"></i>
+                    </div>
+                    <div>
+                        <h3>CSS 3</h3>
+                        <i class="fab fa-css3-alt technology"></i>
+                    </div>
+                    <div>
+                        <h3>JavaScript ES6</h3>
+                        <i class="fab fa-js technology"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-developement-section">
+            <div>
+                <h2>Game developement</h2>
+                <hr>
+                <p class="text">I'm also trying to make some games. I'm not very experienced, just really a beginner. I
+                    use <a href="https://godotengine.org/">Godot engine</a>, it's free, and open-source. You can check
+                    my games on my <a href="https://pavel40.itch.io/">Itch.io</a>.</p>
+                <div class="group">
+                    <div>
+                        <h3>Godot engine</h3>
+                        <img src="img/godot-engine-icon.png" alt="Godot engine" class="technology-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me-section">
+            <div>
+                <h2>Contact me</h2>
+                <hr>
+                <form method="POST" action="https://formspree.io/maylwdgb">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Your email address:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
