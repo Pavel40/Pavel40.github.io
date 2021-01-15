@@ -40,13 +40,16 @@ body.dark-theme .nav-link-active {
         --bg-secondary: black;
         --shadow: none;
     }
+
     #page-header img {
         filter: brightness(.8) contrast(1.2);
     }
+
     #page-header {
         background: rgb(0, 112, 194);
         background: linear-gradient(142deg, rgba(0, 112, 194, 1) 0%, rgba(114, 205, 126, 1) 100%);
     }
+    
     .nav-link-active {
         background-color: rgb(26, 192, 153);
     }
@@ -312,5 +315,9 @@ form {
 
     form {
         min-width: unset;
+    }
+
+    .group {
+        flex-direction: column;
     }
 }
