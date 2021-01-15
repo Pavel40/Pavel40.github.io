@@ -31,16 +31,16 @@ else {
 }
 
 function enableDarkTheme() {
-    document.body.classList.add('dark-theme');
-    document.body.classList.remove('light-theme');
+    document.documentElement.classList.add('dark-theme');
+    document.documentElement.classList.remove('light-theme');
     theme = 'dark';
     localStorage.setItem('theme', 'dark');
     document.getElementById('theme-icon').innerHTML = '<i class="fas fa-sun"></i>';
 }
 
 function enableLightTheme() {
-    document.body.classList.add('light-theme');
-    document.body.classList.remove('dark-theme');
+    document.documentElement.classList.add('light-theme');
+    document.documentElement.classList.remove('dark-theme');
     theme = 'light';
     localStorage.setItem('theme', 'light');
     document.getElementById('theme-icon').innerHTML = '<i class="fas fa-moon"></i>';
