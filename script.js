@@ -18,17 +18,7 @@ window.addEventListener('scroll', () => {
 
 
 // Dark theme
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 let theme;
-if (prefersDarkScheme.matches) {
-    theme = 'dark';
-}
-else if (localStorage.getItem('theme')) {
-    theme = localStorage.getItem('theme');
-}
-else {
-    theme = 'light'
-}
 
 function enableDarkTheme() {
     document.documentElement.classList.add('dark-theme');
@@ -46,11 +36,14 @@ function enableLightTheme() {
     document.getElementById('theme-icon').innerHTML = '<i class="fas fa-moon"></i>';
 }
 
-if (theme == 'dark') {
-    enableDarkTheme();
-}
-else {
-    enableLightTheme();
+if (localStorage.getItem('theme')) {
+    theme = localStorage.getItem('theme');
+    if (theme == 'light') {
+        enableLightTheme();
+    }
+    else {
+        enableDarkTheme();
+    }
 }
 
 const themeButton = document.getElementById('change-theme-button');

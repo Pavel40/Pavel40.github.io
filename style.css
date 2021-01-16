@@ -4,26 +4,23 @@
     --bg-primary: #F3F4F6;
     --bg-secondary: white;
     --shadow: 2px 2px 5px gray;
+    --active-nav-link: rgb(3, 252, 194);
+    --bg-header-fallback: rgb(0, 112, 194);
+    --bg-header: linear-gradient(142deg, rgba(0, 135, 232, 1) 0%, rgba(157, 237, 167, 1) 100%);
+    --img-filter: none;
 }
 
-.dark-theme {
-    --text-primary: white;
-    --bg-primary: #111827;
-    --bg-secondary: #121212;
-    --shadow: none;
-}
-
-body.dark-theme #page-header {
-    background: rgb(0, 112, 194);
-    background: linear-gradient(142deg, rgba(0, 112, 194, 1) 0%, rgba(114, 205, 126, 1) 100%);
-}
-
-body.dark-theme #page-header img {
-    filter: brightness(.8) contrast(1.2);
-}
-
-body.dark-theme .nav-link-active {
-    background-color: rgb(26, 192, 153);
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: white;
+        --bg-primary: #111827;
+        --bg-secondary: #121212;
+        --shadow: none;
+        --active-nav-link: rgb(26, 192, 153);
+        --bg-header-fallback: rgb(0, 135, 232);
+        --bg-header: linear-gradient(142deg, rgba(0, 112, 194, 1) 0%, rgba(114, 205, 126, 1) 100%);
+        --img-filter: brightness(.8) contrast(1.2);
+    }
 }
 
 .light-theme {
@@ -31,28 +28,29 @@ body.dark-theme .nav-link-active {
     --bg-primary: #F3F4F6;
     --bg-secondary: white;
     --shadow: 2px 2px 5px gray;
+    --active-nav-link: rgb(3, 252, 194);
+    --bg-header-fallback: rgb(0, 112, 194);
+    --bg-header: linear-gradient(142deg, rgba(0, 135, 232, 1) 0%, rgba(157, 237, 167, 1) 100%);
+    --img-filter: none;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-primary: white;
-        --bg-primary: #111827;
-        --bg-secondary: black;
-        --shadow: none;
-    }
+.dark-theme {
+    --text-primary: white;
+    --bg-primary: #111827;
+    --bg-secondary: #121212;
+    --shadow: none;
+    --active-nav-link: rgb(26, 192, 153);
+    --bg-header-fallback: rgb(0, 135, 232);
+    --bg-header: linear-gradient(142deg, rgba(0, 112, 194, 1) 0%, rgba(114, 205, 126, 1) 100%);
+    --img-filter: brightness(.8) contrast(1.2);
+}
 
-    #page-header img {
-        filter: brightness(.8) contrast(1.2);
-    }
+img {
+    filter: var(--img-filter);
+}
 
-    #page-header {
-        background: rgb(0, 112, 194);
-        background: linear-gradient(142deg, rgba(0, 112, 194, 1) 0%, rgba(114, 205, 126, 1) 100%);
-    }
-
-    .nav-link-active {
-        background-color: rgb(26, 192, 153);
-    }
+a {
+    color: var(--text-primary);
 }
 
 html {
@@ -117,7 +115,7 @@ h1 {
 }
 
 .nav-link-active {
-    background-color: rgb(3, 252, 194);
+    background-color: var(--active-nav-link);
     transition: 100ms;
 }
 
@@ -154,8 +152,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    background: rgb(0, 135, 232);
-    background: linear-gradient(142deg, rgba(0, 135, 232, 1) 0%, rgba(157, 237, 167, 1) 100%);
+    background: var(--bg-header-fallback);
+    background: var(--bg-header);
     color: white;
 }
 
@@ -273,6 +271,7 @@ form {
 
 .mail {
     font-size: 1.5rem;
+    color: var(--text-primary);
 }
 
 footer {
@@ -290,48 +289,38 @@ footer {
         height: auto;
         width: 100vw;
     }
-
     #navigation:hover {
         width: 100vw;
     }
-
     #navigation:hover .link-text {
         display: none;
     }
-
     .nav-link {
         padding-left: 1rem;
         padding-right: 1rem;
         flex-grow: 1;
     }
-
     #change-theme-button {
         flex-grow: 1;
     }
-
     #main-content {
         padding-left: 0;
         background-color: var(--bg-secondary);
     }
-
     section {
         padding: 0;
     }
-
     section div {
         border-radius: 0;
         box-shadow: 0 0;
         padding: 0.25rem;
     }
-
     form {
         min-width: unset;
     }
-
     .group {
         flex-direction: column;
     }
-
     input[type=submit] {
         margin-bottom: 4rem;
     }
