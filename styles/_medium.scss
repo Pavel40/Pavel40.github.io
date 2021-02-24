@@ -1,0 +1,98 @@
+body {
+    padding-bottom: unset;
+}
+
+.circle1 {
+    right: 1%;
+    top: 1%;
+}
+
+.circle2 {
+    left: 25%;
+    bottom: 20%;
+    width: 17.5rem;
+    height: 17.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.page-nav {
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba($color: white, $alpha: 0.4);
+    backdrop-filter: blur(5px);
+    transition: 100ms ease;
+    ul {
+        padding-left: unset;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        li {
+            width: 100%;
+            a,
+            button {
+                cursor: pointer;
+                width: 100%;
+                padding: 20px;
+                font-family: "Poppins", "sans-serif";
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                height: 80px;
+                span {
+                    margin-left: 1rem;
+                    display: none;
+                }
+            }
+            &:hover {
+                background: white;
+                transition: 200ms;
+            }
+        }
+        li:last-child {
+            margin-top: auto;
+        }
+    }
+    &:hover {
+        width: 380px;
+        background: rgba($color: white, $alpha: 0.8);
+        ul li a,
+        button {
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+#current-link {
+    display: none;
+}
+
+.section-container {
+    padding-left: 100px;
+    min-height: 100vh;
+}
+
+.section-content {
+    width: 88%;
+    min-height: 80vh;
+}
+
+body.dark {
+    .page-nav ul li:hover {
+        background: #121212;
+    }
+}

@@ -1,0 +1,11 @@
+.section-content {
+    width: 98%;
+    flex-direction: row;
+    align-items: unset;
+    .side {
+        width: 33%;
+    }
+    .main {
+        width: 67%;
+    }
+}
