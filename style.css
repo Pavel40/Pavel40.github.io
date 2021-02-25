@@ -341,6 +341,14 @@ h3 {
 .card svg,
 .card img {
   max-width: 60px;
+  max-height: 60px;
+}
+
+.card svg:hover,
+.card img:hover {
+  opacity: 0.8;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .card a {
@@ -593,6 +601,12 @@ h3 {
   }
   body.dark .page-nav ul li:hover {
     background: #121212;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-content {
+    width: 60%;
   }
 }
 

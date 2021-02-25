@@ -217,6 +217,11 @@
     svg,
     img {
         max-width: 60px;
+        max-height: 60px;
+        &:hover {
+            opacity: 0.8;
+            transition: 150ms;
+        }
     }
     a {
         margin-top: auto;
@@ -330,6 +335,10 @@
 
 @media only screen and (min-width: 1280px) {
     @import "medium";
+}
+
+@media only screen and (min-width: 1440px) {
+    @import "large";
 }
 
 body.dark {
