@@ -5,7 +5,7 @@ This is a repo for my personal site.
 ### File structure
 + index.html - main HTML file
 + script.js - main JS file
-+ style.css - compiled CSS from SASS stylesheet
++ style.css - compiled CSS from the SASS files
 + icons - svg icons folder
 + img - images folder
 + styles - uncompiled SASS files folder
