@@ -1,28 +1,5 @@
 @import "base";
 
-.circle1,
-.circle2 {
-    background: rgba($color: #ffffff, $alpha: 0.5);
-    background: linear-gradient(to bottom right, white, rgba(255, 255, 255, 0.5));
-    border-radius: 50%;
-    position: fixed;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.circle1 {
-    height: 17.5rem;
-    width: 17.5rem;
-    top: -7%;
-    right: -7%;
-}
-
-.circle2 {
-    height: 13.5rem;
-    width: 13.5rem;
-    left: -8%;
-    bottom: 15%;
-}
 
 .page-nav ul li a svg,
 .page-nav ul li button svg {
@@ -39,25 +16,30 @@
         left: 0;
         width: 100%;
         box-shadow: 0px 15px 4px 20px rgba(0, 0, 0, 0.25);
+
         #current-link {
             height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             div {
                 display: flex;
                 align-items: center;
                 padding: 0 0.75rem;
+
                 svg {
                     margin-right: 0.75rem;
                     width: 50px;
                     height: 50px;
                 }
             }
+
             button {
                 background: transparent;
                 border: none;
                 margin: 0 0.75rem;
+
                 img {
                     width: 50px;
                     height: 50px;
@@ -65,6 +47,7 @@
             }
         }
     }
+
     #nav-links {
         position: absolute;
         bottom: 4.5rem;
@@ -73,7 +56,9 @@
         padding-left: 0;
         width: 100%;
         background: white;
+
         li {
+
             a,
             button {
                 font-size: 1.5rem;
@@ -81,22 +66,28 @@
                 display: flex;
                 align-items: center;
             }
+
             padding: 0.3rem 0;
+
             svg {
                 width: 40px;
                 margin: 0 1rem;
             }
         }
+
         transition: opacity 150ms;
     }
+
     .hidden {
         opacity: 0;
         pointer-events: none;
     }
+
     body.dark {
         #current-link {
             background: #121212;
         }
+
         .nav-link {
             background: #121212;
         }
@@ -118,13 +109,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     a {
         margin-left: 1.5rem;
     }
+
     svg {
         width: 60px;
         height: 60px;
     }
+
     &:hover {
         opacity: 0.8;
         transition: 150ms;
@@ -164,17 +158,20 @@
     background: rgba($color: #ffffff, $alpha: 0.5);
     backdrop-filter: blur(50px);
     border-radius: 15px;
+
     .side {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+
         h3 {
             color: #596eff;
             text-align: center;
         }
     }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -183,10 +180,12 @@
         background: linear-gradient(to bottom left, white, rgba($color: white, $alpha: 0.65));
         border-radius: 15px;
         padding: 2rem;
+
         h2 {
             text-align: center;
         }
     }
+
     p,
     h2,
     h3 {
@@ -202,11 +201,13 @@
     background: linear-gradient(to top right, rgba($color: white, $alpha: 0.5), white);
     padding: 0.5rem;
     border-radius: 10px;
+
     h4 {
         font-size: 1.5rem;
         color: #51dbe8;
         text-align: center;
     }
+
     .card-content {
         padding-top: 0.5rem;
         padding-left: 0.3rem;
@@ -214,33 +215,41 @@
         display: flex;
         justify-content: space-evenly;
     }
+
     svg,
     img {
         max-width: 60px;
         max-height: 60px;
+
         &:hover {
             opacity: 0.8;
             transition: 150ms;
         }
     }
+
     a {
         margin-top: auto;
         margin-left: 1rem;
+
         img {
             width: 50px;
             height: 50px;
+
             &:hover {
                 opacity: 0.8;
                 transition: 100ms;
             }
         }
     }
+
     .project-links {
         display: flex;
         justify-content: flex-end;
+
         a {
             padding: 0.3rem 0.5rem;
         }
+
         .psd {
             margin-right: auto;
             padding-left: 0;
@@ -263,6 +272,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     input,
     textarea {
         width: 100%;
@@ -272,14 +282,17 @@
         border-radius: 10px;
         border: 2px solid #51dbe8;
         padding: 0.5rem;
+
         &:focus {
             outline: none;
             border-color: #518ce8;
         }
     }
+
     textarea {
         resize: none;
     }
+
     .send {
         cursor: pointer;
         position: absolute;
@@ -293,6 +306,7 @@
         font-weight: 600;
         transition: 100ms;
         width: unset;
+
         &:focus,
         &:hover {
             background: #51dbe8;
@@ -312,6 +326,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     transition: 100ms;
+
     &:hover,
     &:focus {
         background: #518ce8;
@@ -321,9 +336,11 @@
 
 .page-footer .section-content .main {
     width: 100%;
+
     .haha-funny {
         font-weight: bold;
     }
+
     a {
         text-decoration: underline;
     }
@@ -373,11 +390,6 @@ body.dark {
         background: rgba($color: black, $alpha: 0.5);
     }
 
-    .circle1,
-    .circle2 {
-        background: linear-gradient(to bottom right, rgb(60, 60, 60), rgba($color: black, $alpha: 0.5));
-    }
-
     .card {
         background: linear-gradient(to top right, rgba($color: black, $alpha: 0.5), black);
     }
@@ -413,13 +425,16 @@ body.dark {
     }
 
     .contact-form {
+
         input,
         textarea {
             background: #121212;
             color: white;
         }
+
         .send {
             background: #65c9ff;
+
             &:hover,
             &:focus {
                 background: #518ce8;
@@ -437,6 +452,7 @@ body.dark {
             fill: rgb(60, 60, 60);
         }
     }
+
     .card svg {
         fill: white;
     }
